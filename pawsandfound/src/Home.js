@@ -6,7 +6,7 @@ import Quiz from './Quiz';
 function Home() {
   return (
     <div>
-      <h2>Home Page</h2>
+      <h2>Home Page (new quiz button page)</h2>
       <h3>(welcome message)</h3>
       <Link to="/Location">
         <button className="btn btn-primary">Start New Quiz</button>
