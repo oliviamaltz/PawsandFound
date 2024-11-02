@@ -9,7 +9,6 @@ import Adopt from './Adopt';
 
 function App() {
   const location = useLocation();
-
   return (
     <div>
       {location.pathname === '/' && (
@@ -32,6 +31,7 @@ function App() {
         <Route path="/Adopt/*" element={<Adopt />} />
       </Routes>
     </div>
+    
   );
 }
 
