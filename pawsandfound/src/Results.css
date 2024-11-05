@@ -5,3 +5,55 @@
     width: 200px;
     height: auto;
   }
+
+#results-btn {
+    margin: 5px 10px;
+  }
+
+.meter-container {
+  width: 100%;                    /* Full-width of container */
+  max-width: 300px;               /* Set a max-width for responsiveness */
+  height: 30px;                   /* Height of the meter */
+  background-color: #e0e0e0;      /* Light gray background */
+  border-radius: 15px;            /* Rounded corners */
+  position: relative;             /* Allows positioning of label */
+  overflow: hidden;               /* Crop fill at rounded edges */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+.meter-fill1 {
+  height: 100%;
+  background-color: #4caf50;      /* Green color for compatibility level */
+  width: 0;                       /* Initial width (will be set by React) */
+  transition: width 0.4s ease-in-out; /* Smooth fill transition */
+  border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
+}
+
+.meter-fill2 {
+  height: 100%;
+  background-color: #4caf50;      /* Green color for compatibility level */
+  width: 0;                       /* Initial width (will be set by React) */
+  transition: width 0.4s ease-in-out; /* Smooth fill transition */
+  border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
+}
+
+.meter-fill3 {
+  height: 100%;
+  background-color: #e9d81e;      /* Green color for compatibility level */
+  width: 0;                       /* Initial width (will be set by React) */
+  transition: width 0.4s ease-in-out; /* Smooth fill transition */
+  border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
+}
+  
+.meter-label {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+}
