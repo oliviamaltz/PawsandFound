@@ -10,19 +10,21 @@ import './Results.css';
 
 function Results() {
   return (
-    <div>
-      <h2>Results Page</h2>
+    <div className="profile-container">
+      <div className="profile-header">
+        <h1>Quiz Results</h1>
+      </div>
       <div style={styles.container}>
       <Link to="/Location">
-        <button className="btn btn-primary">LOC</button>
+      <button className="emoji-button">📍</button>
       </Link>
-      <Link to="/Quiz">
-        <button className="btn btn-primary">QUIZ</button>
-      </Link>
+      <button className="emoji-button">🤍</button>
+      
+        
       </div>
       
       <h3></h3>
-      <div style={styles.container}>
+      <div className="result-item" style={styles.container}>
         <img src={garfieldImage} className="img-thumbnail" alt="garfield-thumbnail" />
         <div style={styles.text}>
         <div className="meter-container">
@@ -35,11 +37,13 @@ function Results() {
 
         <h2>Garfield</h2>
         <h2>Age: 5</h2>
-        <button id="results-btn" className="btn btn-primary">Calm</button>
-        <button id="results-btn" className="btn btn-primary">Friendly</button>
-        <button id="results-btn" className="btn btn-primary">Glutton</button>
+        <div className="tags">
+          <span className="tag">Calm</span>
+          <span className="tag">Friendly</span>
+          <span className="tag">Glutton</span>
+        </div>
         <Link to="/Profile">
-        <button id="results-btn" className="btn btn-primary">More Information</button>
+        <button id="results-btn" className="apply-button">More Information</button>
         </Link>
       </div>
       </div>
@@ -48,7 +52,7 @@ function Results() {
       <h1></h1>
       <h1></h1>
 
-      <div style={styles.container}>
+      <div div className="result-item" style={styles.container}>
         <img src={tobyImage} className="img-thumbnail" alt="toby-thumbnail" />
         <div style={styles.text}>
         <div className="meter-container">
@@ -58,9 +62,11 @@ function Results() {
       </div>
         <h2>Toby</h2>
         <h2>Age: 5</h2>
-        <button id="results-btn" className="btn btn-primary">Calm</button>
-        <button id="results-btn" className="btn btn-primary">Child-Friendly</button>
-        <button id="results-btn" className="btn btn-primary">More Information</button>
+        <div className="tags">
+        <span className="tag">Calm</span>
+        <span className="tag">Clever</span>
+        </div>
+        <button id="results-btn" className="apply-button">More Information</button>
       </div>
       </div>
 
@@ -68,7 +74,7 @@ function Results() {
       <h1></h1>
       <h1></h1>
 
-      <div style={styles.container}>
+      <div div className="result-item" style={styles.container}>
         <img src={picklesImage} className="img-thumbnail" alt="pickles-thumbnail" />
         <div style={styles.text}>
         <div className="meter-container">
@@ -80,9 +86,11 @@ function Results() {
         <h3></h3>
         <h2>Pickles</h2>
         <h2>Age: 7</h2>
-        <button id="results-btn" className="btn btn-primary">Energetic</button>
-        <button id="results-btn" className="btn btn-primary">Friendly</button>
-        <button id="results-btn" className="btn btn-primary">More Information</button>
+        <div className="tags">
+        <span className="tag">Energetic</span>
+        <span className="tag">Friendly</span>
+        </div>
+        <button id="results-btn" className="apply-button">More Information</button>
       </div>
       </div>
       

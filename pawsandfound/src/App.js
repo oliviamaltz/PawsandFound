@@ -1,37 +1,40 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Quiz from './Quiz';
 import Location from './Location';
 import Results from './Results';
 import Profile from './Profile';
-import Adopt from './Adopt';
+import Apply from './Apply';
+import './Loading.css'; 
 
 function App() {
-  const location = useLocation();
   return (
     <div>
-      {location.pathname === '/' && (
-        <div>
-          <h1>Base Page with logo and css styling (loading page)</h1>
-
-          <Link to="/Home">
-            <button className="btn btn-primary">Get Started!</button>
-          </Link>
-        </div>
-      )}
-      
-
       <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="loading-page-container">
+              <h1 className="welcome-text">Welcome</h1>
+              <h2 className="subtitle-text">to Paws and Found!</h2>
+              <img src="/image.png" alt="Paws and Found Logo" className="logo" />
+              <p className="thank-you-text">Thank you for starting your foster/adoption journey with us!</p>
+              <Link to="/Home">
+                <button className="btn btn-primary get-started-button">Start Now</button>
+              </Link>
+            </div>
+          }
+        />
+        
         <Route path="/Home/*" element={<Home />} />
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Quiz/*" element={<Quiz />} />
         <Route path="/Results/*" element={<Results />} />
         <Route path="/Profile/*" element={<Profile />} />
-        <Route path="/Adopt/*" element={<Adopt />} />
+        <Route path="/Apply/*" element={<Apply />} />
       </Routes>
     </div>
-    
   );
 }
 

@@ -10,6 +10,18 @@
     margin: 5px 10px;
   }
 
+  .emoji-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .result-item {
+    margin-bottom: 50px; 
+  }
+
 .meter-container {
   width: 100%;                    /* Full-width of container */
   max-width: 300px;               /* Set a max-width for responsiveness */
@@ -23,7 +35,7 @@
 
 .meter-fill1 {
   height: 100%;
-  background-color: #4caf50;      /* Green color for compatibility level */
+  background-color: #A3D9A5;      /* Green color for compatibility level */
   width: 0;                       /* Initial width (will be set by React) */
   transition: width 0.4s ease-in-out; /* Smooth fill transition */
   border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
@@ -31,7 +43,7 @@
 
 .meter-fill2 {
   height: 100%;
-  background-color: #4caf50;      /* Green color for compatibility level */
+  background-color: #A3D9A5;      /* Green color for compatibility level */
   width: 0;                       /* Initial width (will be set by React) */
   transition: width 0.4s ease-in-out; /* Smooth fill transition */
   border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
@@ -39,7 +51,7 @@
 
 .meter-fill3 {
   height: 100%;
-  background-color: #e9d81e;      /* Green color for compatibility level */
+  background-color: #FFC570;      /* Green color for compatibility level */
   width: 0;                       /* Initial width (will be set by React) */
   transition: width 0.4s ease-in-out; /* Smooth fill transition */
   border-radius: 15px 0 0 15px;   /* Rounded edge on the left */
@@ -55,5 +67,99 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: #333;
+}
+
+.profile-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  background-color: #65a39b;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.profile-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.apply-button {
+  background-color: #00473e;
+  color: #fff;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile-section {
+  margin-top: 20px;
+}
+
+.profile-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #d6a2e8;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.tag:nth-child(2) {
+  background-color: #d6a2e8;
+}
+
+.tag:nth-child(3) {
+  background-color: #d6a2e8;
+}
+
+p {
+  font-size: 14px;
   color: #333;
 }
