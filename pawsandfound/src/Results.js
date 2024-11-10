@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Profile from './Profile';
 import Location from './Location';
-import Quiz from './Quiz';
 import garfieldImage from './garfield1.png';
 import tobyImage from './toby.png'
 import picklesImage from './pickles.png'

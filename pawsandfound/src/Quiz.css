@@ -1,4 +1,18 @@
-#flex {
+/* #flex {
     margin: 10px 80px;
     padding: 10px;
-}
+} */
+
+.profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #A3D9A5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .quiz-item {
+    margin-bottom: 30px; 
+  }

@@ -5,10 +5,9 @@ import './Quiz.css';
 
 function Quiz() {
   return (
-    <div>
-      <h2>Quiz Page</h2>
-
+    <div className="profile-container">
       <h3>Would you like to foster a cat or a dog?</h3>
+      <div className="quiz-item">
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckCat"/>
@@ -19,7 +18,9 @@ function Quiz() {
         <label class="form-check-label" for="flexCheckDog">Dog</label>
       </div>
       </div>
-
+      </div>
+      
+      <div className="quiz-item">
       <h3>Are you interested in fostering to adopt or temporary placement?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -31,7 +32,9 @@ function Quiz() {
         <label class="form-check-label" for="flexCheckTemp">Temporary Foster</label>
       </div>
       </div>
-
+      </div>
+      
+      <div className="quiz-item">
       <h3>Do you prefer a certain age range of animal?</h3>
       <div class="container">
       <div class="row justify-content-left">
@@ -44,7 +47,9 @@ function Quiz() {
         </div>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>Do you prefer your animal to be male or female?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -56,7 +61,9 @@ function Quiz() {
         <label class="form-check-label" for="flexCheckFemale">Female</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>Do you prefer a certain size?</h3>
       <div class="container">
       <div class="row justify-content-left">
@@ -69,7 +76,9 @@ function Quiz() {
         </div>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>Do you have the ability to train your animal?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -81,7 +90,9 @@ function Quiz() {
         <label class="form-check-label" for="flexRadioDefault2">I can train them</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>Do you have an outdoor area or yard accessible to your foster animal?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -93,7 +104,9 @@ function Quiz() {
       <label class="form-check-label" for="flexRadioDefault4">No</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>How much room (in sq ft) will your animal have access to?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -113,7 +126,9 @@ function Quiz() {
       <label class="form-check-label" for="flexRadioDefault8">Greater than 2000</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>How many cats do you currently live with?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -133,7 +148,9 @@ function Quiz() {
       <label class="form-check-label" for="flexRadioDefault11">3+</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>How many dogs do you currently live with?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -153,7 +170,9 @@ function Quiz() {
       <label class="form-check-label" for="flexRadioDefault12">3+</label>
       </div>
       </div>
+      </div>
 
+      <div className="quiz-item">
       <h3>Do you live with any children?</h3>
       <div id="flex" class="d-flex justify-content-left">
       <div class="form-check me-3">
@@ -163,6 +182,7 @@ function Quiz() {
       <div class="form-check me-3">
       <input class="form-check-input" type="radio" name="children" id="flexRadioDefault14"/>
       <label class="form-check-label" for="flexRadioDefault14">No</label>
+      </div>
       </div>
       </div>
 
