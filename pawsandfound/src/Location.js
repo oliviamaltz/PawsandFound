@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Quiz from './Quiz';
 import './Location.css'; // Import the CSS file for styling
-//import locationImg from './location.png'; // Import the image from src folder
 
 // Custom icon for the map marker
 const markerIcon = new L.Icon({
@@ -29,12 +28,12 @@ function Location() {
   const radiusInMiles = (radius / 1609.34).toFixed(1);
 
   return (
-    <div className="location-container">
+    <div className="location-page-container">
       <h2>Foster and Forever Homes</h2>
       <div className="map-wrapper">
         <MapContainer
           center={position}
-          zoom={11} // Set initial zoom level to show approximately 20 miles wide
+          zoom={11}
           className="map-container"
         >
           <TileLayer
@@ -55,7 +54,7 @@ function Location() {
       <input
         type="range"
         min="0"
-        max={maxRadiusInMeters} // Set the slider max to 15 miles in meters
+        max={maxRadiusInMeters}
         value={radius}
         onChange={(e) => setRadius(e.target.value)}
         className="slider"
