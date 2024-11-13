@@ -44,13 +44,12 @@ function Quiz3() {
       </div>
       </div>
     
-
       <Link to="/Quiz2">
-        <button className="btn btn-primary">Back</button>
+        <button className="footer-button">Back</button>
       </Link>
 
       <Link to="/Quiz4">
-        <button className="btn btn-primary">Next Page</button>
+          <button className="footer-button">Next</button>
       </Link>
 
       <Routes>

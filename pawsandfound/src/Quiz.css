@@ -14,7 +14,15 @@
   }
 
   .quiz-item {
-    margin-bottom: 60px; 
+    margin-bottom: 75px; 
+  }
+
+  .footer-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px 50px;
   }
 
 /* Checkbox custom styling */

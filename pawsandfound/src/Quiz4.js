@@ -66,12 +66,12 @@ function Quiz4() {
       </div>
       </div>
 
-      <Link to="/Quiz2">
-        <button className="btn btn-primary">Back</button>
+      <Link to="/Quiz3">
+        <button className="footer-button">Back</button>
       </Link>
 
       <Link to="/Results">
-        <button className="btn btn-primary">Submit Quiz</button>
+          <button className="footer-button">Submit</button>
       </Link>
 
       <Routes>
