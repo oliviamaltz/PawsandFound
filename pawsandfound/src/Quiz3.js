@@ -54,8 +54,8 @@ function Quiz3() {
       </Link>
 
       <Routes>
-        <Route path="/Quiz4/*" element={<Results />} />
-        <Route path="/Quiz2/*" element={<Results />} />
+        <Route path="/Quiz4/*" element={<Quiz4 />} />
+        <Route path="/Quiz2/*" element={<Quiz2 />} />
       </Routes>
     </div>
 

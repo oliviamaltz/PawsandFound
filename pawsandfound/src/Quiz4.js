@@ -4,7 +4,7 @@ import Results from './Results';
 import Quiz3 from './Quiz3';
 import './Quiz.css';
 
-function Quiz3() {
+function Quiz4() {
   return (
     <div className="profile-container">
 
@@ -76,11 +76,11 @@ function Quiz3() {
 
       <Routes>
         <Route path="/Results/*" element={<Results />} />
-        <Route path="/Quiz3/*" element={<Results />} />
+        <Route path="/Quiz3/*" element={<Quiz3 />} />
       </Routes>
     </div>
 
   );
 }
 
-export default Quiz3;
+export default Quiz4;
