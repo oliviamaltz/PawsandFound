@@ -2,6 +2,9 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Quiz from './Quiz';
+import Quiz2 from './Quiz2';
+import Quiz3 from './Quiz3';
+import Quiz4 from './Quiz4';
 import Location from './Location';
 import Results from './Results';
 import Profile from './Profile';
@@ -30,6 +33,9 @@ function App() {
         <Route path="/Home/*" element={<Home />} />
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Quiz/*" element={<Quiz />} />
+        <Route path="/Quiz2/*" element={<Quiz />} />
+        <Route path="/Quiz3/*" element={<Quiz />} />
+        <Route path="/Quiz4/*" element={<Quiz />} />
         <Route path="/Results/*" element={<Results />} />
         <Route path="/Profile/*" element={<Profile />} />
         <Route path="/Apply/*" element={<Apply />} />
