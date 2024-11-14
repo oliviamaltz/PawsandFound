@@ -3,48 +3,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  max-width: 480px; /* Maximum width for phone-sized containers */
-  margin: 0 auto; /* Center container on wider screens */
-  background-color: #123524;
+  height: 100vh; /* Full screen height */
+  max-width: 400px; /* Phone-sized layout */
+  margin: 0 auto; /* Center container */
+  padding: 20px;
+  background-color: #123524; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: center;
-  box-sizing: border-box; /* Include padding and border in width/height */
-  padding: 20px; /* Add some padding for smaller screens */
+  box-sizing: border-box; /* Include padding in dimensions */
 }
 
 .welcome-text {
-  font-size: 24px; /* Adjust font size for smaller screens */
+  font-size: 24px; /* Adjust font size */
   color: #ffffff;
-  margin: 0;
+  margin: 10px 0; /* Add some margin for spacing */
 }
 
 .subtitle-text {
   font-size: 18px; /* Adjust font size for readability */
   color: #ffffff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Add space below subtitle */
 }
 
 .logo {
   width: 150px; /* Adjust logo size for smaller screens */
   height: auto; 
-  margin: 15px 0;
+  margin: 20px 0; /* Add space around the logo */
 }
 
 .thank-you-text {
   font-size: 14px; /* Adjust text size for smaller screens */
   color: #ffffff;
-  margin: 10px 0 15px;
+  margin: 10px 0 20px; /* Add space above and below text */
 }
 
 .get-started-button {
-  padding: 8px 16px; /* Adjust padding for button */
-  font-size: 16px; /* Adjust font size */
+  padding: 12px 24px; /* Adjust padding for button */
+  font-size: 18px; /* Adjust font size */
   cursor: pointer;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff; /* White border for button */
   color: #ffffff;
-  background-color: transparent;
-  border-radius: 5px;
+  background-color: transparent; /* Transparent background */
+  border-radius: 5px; /* Rounded corners */
   text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Add hover effects */
+}
+
+.get-started-button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #123524; /* Dark text on hover */
 }

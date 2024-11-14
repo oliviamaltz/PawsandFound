@@ -1,0 +1,60 @@
+/* Home.css */
+
+.home-container {
+    max-width: 400px; /* Limits the width to make it look like a phone screen */
+    height: 100vh; /* Ensures the container fills the full height of the screen */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #183d34; /* Dark green background specific to Home page */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* White text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    max-width: 80%;
+    color: #d3d3d3; /* Light gray for a subtle appearance */
+  }
+  
+  .quiz-prompt {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .quiz-button {
+    background-color: #a8d5a8;
+    color: #183d34;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Makes each button take full width of the container */
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-button:hover {
+    background-color: #86c086;
+  }
+  
