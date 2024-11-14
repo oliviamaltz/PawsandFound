@@ -83,6 +83,8 @@ function Results() {
           <button className="footer-button">📍</button>
         </Link>
         <button className="footer-button">🤍</button>
+        <button className="footer-button">🔍</button>
+        <button className="footer-button">❓</button>
       </footer>
 
       <Routes>
