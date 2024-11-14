@@ -1,35 +1,42 @@
 .apply-page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #123524; /* Background color */
-    text-align: center;
-  }
-  
-  .apply-welcome-text {
-    font-size: 32px;
-    color: #ffffff;
-    margin: 0;
-  }
-  
-  .apply-subtitle-text {
-    font-size: 24px;
-    color: #ffffff;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .apply-logo {
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-    margin: 20px 0;
-  }
-  
-  .apply-thank-you-text {
-    font-size: 16px;
-    color: #ffffff;
-    margin: 10px 0 20px;
-  }
-  
+  max-width: 400px; /* Limits the width to make it look like a phone screen */
+  height: 100vh; /* Ensures the container fills the full height of the screen */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #123524; /* Background color */
+  border-radius: 10px; /* Matches the rounded corners of Home.css */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* White text color */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-welcome-text {
+  font-size: 1.5rem; /* Matches the title font size in Home.css */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.apply-subtitle-text {
+  font-size: 1.2rem; /* Matches the welcome message font size in Home.css */
+  margin-bottom: 10px;
+  max-width: 80%; /* Ensures proper alignment and wrapping */
+  color: #d3d3d3; /* Light gray for a subtle appearance */
+}
+
+.apply-logo {
+  width: 150px; /* Matches a proportionate size for phone screens */
+  height: auto;
+  margin: 15px 0;
+}
+
+.apply-thank-you-text {
+  font-size: 1rem; /* Matches the quiz-prompt font size in Home.css */
+  margin-bottom: 20px;
+  max-width: 80%;
+  color: #d3d3d3; /* Light gray for consistency */
+}
