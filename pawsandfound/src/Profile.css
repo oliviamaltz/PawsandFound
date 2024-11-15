@@ -79,13 +79,13 @@
     font-size: 14px;
   }
   
-  .tag:nth-child(2) {
+  /* .tag:nth-child(2) {
     background-color: #65a39b;
   }
   
   .tag:nth-child(3) {
     background-color: #f89c1c;
-  }
+  } */
   
   p {
     font-size: 14px;
