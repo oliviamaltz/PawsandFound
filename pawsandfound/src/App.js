@@ -7,6 +7,7 @@ import Quiz3 from './Quiz3';
 import Quiz4 from './Quiz4';
 import Location from './Location';
 import Results from './Results';
+import Results2 from './Results2';
 import Profile from './Profile';
 import Apply from './Apply';
 import './Loading.css'; 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Quiz3/*" element={<Quiz3 />} />
         <Route path="/Quiz4/*" element={<Quiz4 />} />
         <Route path="/Results/*" element={<Results />} />
+        <Route path="/Results2/*" element={<Results2 />} />
         <Route path="/Profile/*" element={<Profile />} />
         <Route path="/Apply/*" element={<Apply />} />
       </Routes>
