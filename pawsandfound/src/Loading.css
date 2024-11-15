@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
 .loading-page-container {
   display: flex;
+  font-family: 'Roboto Slab', serif !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;

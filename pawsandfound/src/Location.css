@@ -1,6 +1,8 @@
 /* Location.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 .location-page-container {
+  font-family: 'Roboto Slab', serif !important;
   max-width: 400px; /* Limits the width to make it look like a phone screen */
   height: 100vh; /* Ensures the container fills the full height of the screen */
   margin: 0 auto;

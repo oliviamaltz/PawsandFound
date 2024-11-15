@@ -10,10 +10,12 @@ import Results from './Results';
 import Profile from './Profile';
 import Apply from './Apply';
 import './Loading.css'; 
+// import '../public/styles.css'
+
 
 function App() {
   return (
-    <div>
+    <div className="big-container">
       <Routes>
         <Route
           path="/"

@@ -20,10 +20,9 @@ function Results() {
         <div className="result-card">
           <div className="leftside">
           <img src={garfieldImage} alt="Garfield" className="result-image" />
-          <div className="meter">
-          <div className="match-circle">90% Match
-              <div className="fill"></div>
-              </div>
+          <div className="meter-container">
+            <div className="meter-fill" style={{ width: `90%` }}></div>
+            <span className="meter-label">90% Match</span>
             </div>
           </div>
           
@@ -47,10 +46,9 @@ function Results() {
         <div className="result-card">
         <div className="leftside">
           <img src={tobyImage} alt="Toby" className="result-image" />
-          <div className="meter">
-              <div className="match-circle">80% Match
-              <div className="fill"></div>
-              </div>
+            <div className="meter-container">
+            <div className="meter-fill" style={{ width: `80%` }}></div>
+            <span className="meter-label">80% Match</span>
             </div>
           </div>
           <div className="result-details">
@@ -71,10 +69,9 @@ function Results() {
         <div className="result-card">
         <div className="leftside">
           <img src={picklesImage} alt="Pickles" className="result-image" />
-          <div className="meter">
-              <div className="match-circle">70% Match
-              <div className="fill"></div>
-              </div>
+          <div className="meter-container">
+            <div className="meter-fill" style={{ width: `70%` }}></div>
+            <span className="meter-label">70% Match</span>
             </div>
           </div>
           <div className="result-details">

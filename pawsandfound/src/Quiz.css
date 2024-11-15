@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
 .quiz-container {
+  font-family: 'Roboto Slab', serif !important;
   max-width: 400px; /* Phone-sized layout */
   height: 100vh; /* Full screen height */
   margin: 0 auto; /* Center container */
