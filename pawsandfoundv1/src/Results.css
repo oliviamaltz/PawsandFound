@@ -1,0 +1,270 @@
+/* Results.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+
+.results-container {
+  font-family: 'Roboto Slab', serif;
+  max-width: 400px; /* Adjusted for narrower screens */
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #A3D9A5;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex {
+  margin-bottom: 10px;
+}
+
+.results-header {
+  text-align: center;
+  background-color: #65a39b;
+  padding: 15px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* padding-bottom: 5px; */
+}
+
+.results-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 250px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 22px;;
+}
+
+.result-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.more-info-button {
+  background-color: #00473e;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 135px;
+  text-align: center;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 15px; */
+}
+
+.result-name {
+  font-size: 16px;
+  font-weight: bold;
+  /* margin-bottom: 5px; */
+}
+
+.result-age {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #d6a2e8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* .footer-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+} */
+
+/* Footer container */
+.results-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  text-decoration: none !important;
+}
+
+/* Footer links */
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #00473e;
+  font-size: 14px;
+  transition: color 0.3s;
+  margin: 0px 40px;
+  text-decoration: none !important;
+}
+
+.footer-link span {
+  margin-top: 4px;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+.footer-link:hover {
+  color: #d6a2e8;
+  text-decoration: none !important;
+}
+
+/* Active link styling */
+.footer-link.active {
+  color: #d6a2e8;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+
+.meter-container {
+  margin-top: 40px;
+  width: 100%;                    /* Full width of the container */
+  max-width: 300px;               /* Maximum width for responsiveness */
+  height: 30px;                   /* Height of the meter */
+  background-color: #e0e0e0;      /* Light gray background */
+  border-radius: 15px;            /* Rounded corners */
+  position: relative;             /* Allows positioning of label */
+  overflow: hidden;               /* Crop fill at rounded edges */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+.meter-fill {
+  height: 100%;                   /* Full height of the container */
+  background-color: #A3D9A5;      /* Green color for compatibility level */
+  width: 0;                       /* Initial width, to be set dynamically */
+  transition: width 0.4s ease-in-out; /* Smooth transition as width changes */
+  border-radius: 15px 0 0 15px;   /* Rounded edge on the left side */
+}
+
+.meter-label {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  text-decoration: none !important;
+}
+
+/* Pagination buttons */
+.pagination-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.pagination-button:hover {
+  background-color: #d6a2e8;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.pagination-button:focus {
+  outline: none;
+  background-color: #d6a2e8;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.footer-link,
+.pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Match sizes */
+  height: 35px; /* Match sizes */
+  text-decoration: none !important;
+}
+
+/* Ensure no underlines for all links, including pagination buttons and footer links */
+a, .footer-link, .pagination-button {
+  text-decoration: none !important; /* Force removal of underlines */
+}
+
+/* Ensure underlines are removed from spans within links, if applicable */
+a span, .footer-link span {
+  text-decoration: none !important;
+}
+
+/* Specific targeting for React Router Link components */
+.pagination-container a {
+  text-decoration: none !important; /* Removes underline from pagination links */
+}
+
+/* General fallback for all links inside the container */
+.results-container a {
+  text-decoration: none !important;
+}
