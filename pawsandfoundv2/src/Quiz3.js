@@ -28,11 +28,16 @@ function Quiz3() {
         <FontAwesomeIcon icon={faPaw} size="2x" color="white" />
       </div>
 
+      {/* Note Section */}
+      <div className="quiz-note">
+        <p>Tell us about your home so we can find the best match!</p>
+      </div>
+
       {/* Content Section */}
       <div className="quiz-content">
         {/* Question 1 */}
         <div className="quiz-item">
-          <h3>Do you have an outdoor area or yard accessible to your foster animal?</h3>
+          <h3>Do you have access to an outdoor area or yard for your furry friend?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input
@@ -63,7 +68,7 @@ function Quiz3() {
 
         {/* Question 2 */}
         <div className="quiz-item">
-          <h3>How much indoor space (in square feet) will the foster animal have access to?</h3>
+          <h3>How much indoor space (in sq. ft. ) will be accessible to your furry friend?</h3>
           <div id="flex" className="d-flex flex-column align-items-start">
             <div className="form-check mb-2">
               <input

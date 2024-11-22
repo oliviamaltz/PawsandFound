@@ -42,7 +42,7 @@ function Quiz() {
       <div className="quiz-content">
         {/* Question 1 */}
         <div className="quiz-item">
-          <h3>Are you interested in fostering a cat or a dog?</h3>
+          <h3>What furry friend are you looking for?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input className="form-check-input" type="checkbox" id="flexCheckCat" />

@@ -33,11 +33,16 @@ function Quiz4() {
         <FontAwesomeIcon icon={faPaw} size="2x" color="#183d34" />
       </div>
 
+      {/* Note Section */}
+      <div className="quiz-note">
+        <p>Tell us about your family so we can find the best match!</p>
+      </div>
+
       {/* Content Section */}
       <div className="quiz-content">
         {/* Question 1 */}
         <div className="quiz-item">
-          <h3>How many cats currently live in your household?</h3>
+          <h3>How many cats do you have at home?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input
@@ -92,7 +97,7 @@ function Quiz4() {
 
         {/* Question 2 */}
         <div className="quiz-item">
-          <h3>How many dogs currently live in your household?</h3>
+          <h3>How many dogs do you have at home?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input
@@ -147,7 +152,7 @@ function Quiz4() {
 
         {/* Question 3 */}
         <div className="quiz-item">
-          <h3>Do you currently live with children?</h3>
+          <h3>Do you live with any children?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input

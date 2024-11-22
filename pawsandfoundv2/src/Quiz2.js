@@ -37,11 +37,16 @@ function Quiz2() {
         <FontAwesomeIcon icon={faPaw} size="2x" color="white" />
       </div>
 
+      {/* Note Section */}
+      <div className="quiz-note">
+        <p>Tell us what you're looking for in a furry friend!</p>
+      </div>
+
       {/* Content Section */}
       <div className="quiz-content">
         {/* Question 1 */}
         <div className="quiz-item">
-          <h3>Do you have a preference for the gender of your foster animal?</h3>
+          <h3>What genders are you open to caring for?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input
@@ -72,19 +77,19 @@ function Quiz2() {
                 className="form-check-input"
                 type="radio"
                 name="gender"
-                id="flexRadioBoth"
-                value="Both"
-                checked={selectedGender === 'Both'}
+                id="flexRadioEither"
+                value="Either"
+                checked={selectedGender === 'Either'}
                 onChange={handleGenderChange}
               />
-              <label className="form-check-label" htmlFor="flexRadioBoth">Both</label>
+              <label className="form-check-label" htmlFor="flexRadioEither">Either</label>
             </div>
           </div>
         </div>
 
         {/* Question 2 */}
         <div className="quiz-item">
-          <h3>Do you have a size preference for your foster animal? (Please specify in pounds)</h3>
+          <h3> What size (in lbs.) furry friend are you open to caring for?</h3>
           <div className="range-slider-container">
             <div className="range-slider">
               <input
@@ -111,9 +116,9 @@ function Quiz2() {
 
         {/* Question 3 */}
         <div className="quiz-item">
-          <h3>Are you able to provide training for your foster animal if needed?</h3>
-          <div id="flex" className="d-flex justify-content-left">
-            <div className="form-check me-3">
+          <h3>Do you feel comfortable training your furry friend?</h3>
+          <div id="flex" className="d-flex flex-column">
+            <div className="form-check mb-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -123,9 +128,11 @@ function Quiz2() {
                 checked={trainingPreference === 'Already Trained'}
                 onChange={handleTrainingChange}
               />
-              <label className="form-check-label" htmlFor="flexRadioTrained">Should Be Already Trained</label>
+              <label className="form-check-label" htmlFor="flexRadioTrained">
+                Not comforitable
+              </label>
             </div>
-            <div className="form-check ms-3">
+            <div className="form-check">
               <input
                 className="form-check-input"
                 type="radio"
@@ -135,7 +142,9 @@ function Quiz2() {
                 checked={trainingPreference === 'I can train them'}
                 onChange={handleTrainingChange}
               />
-              <label className="form-check-label" htmlFor="flexRadioCanTrain">I can train them</label>
+              <label className="form-check-label" htmlFor="flexRadioCanTrain">
+                Comfortiable
+              </label>
             </div>
           </div>
         </div>
