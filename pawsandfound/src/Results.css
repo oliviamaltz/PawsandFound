@@ -1,24 +1,25 @@
 /* Results.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 
 .results-container {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Noto Sans';
   max-width: 400px; /* Adjusted for narrower screens */
   margin: 0 auto;
   padding: 10px;
-  background-color: #A3D9A5;
+  background-color: #F2EFDE;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .d-flex {
   margin-bottom: 10px;
+  color: #5F6F52;
 }
 
 .results-header {
   text-align: center;
-  background-color: #65a39b;
+  background-color: #5F6F52;
   padding: 15px;
   color: white;
   border-radius: 10px 10px 0 0;
@@ -68,7 +69,7 @@ h2 {
 }
 
 .more-info-button {
-  background-color: #00473e;
+  background-color: #5F6F52;
   color: white;
   padding: 4px 8px;
   border: none;
@@ -111,7 +112,7 @@ h2 {
 }
 
 .tag {
-  background-color: #d6a2e8;
+  background-color: #B99470;
   color: white;
   padding: 5px 10px;
   border-radius: 12px;
@@ -143,7 +144,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #00473e;
+  color: #A9B388;
   font-size: 14px;
   transition: color 0.3s;
   margin: 0px 40px;
@@ -154,16 +155,17 @@ h2 {
   margin-top: 4px;
   font-size: 12px;
   text-decoration: none !important;
+  color: #A9B388;
 }
 
 .footer-link:hover {
-  color: #d6a2e8;
+  color: #5F6F52;
   text-decoration: none !important;
 }
 
 /* Active link styling */
 .footer-link.active {
-  color: #d6a2e8;
+  color: #5F6F52;
   font-weight: bold;
   text-decoration: none !important;
 }
@@ -183,7 +185,7 @@ h2 {
 
 .meter-fill {
   height: 100%;                   /* Full height of the container */
-  background-color: #A3D9A5;      /* Green color for compatibility level */
+  background-color: #A9B388;      /* Green color for compatibility level */
   width: 0;                       /* Initial width, to be set dynamically */
   transition: width 0.4s ease-in-out; /* Smooth transition as width changes */
   border-radius: 15px 0 0 15px;   /* Rounded edge on the left side */
@@ -217,7 +219,7 @@ h2 {
   height: 30px;
   border: 1px solid #ccc;
   border-radius: 50%;
-  background-color: #f8f8f8;
+  background-color: #A9B388;
   color: #333;
   font-size: 14px;
   text-align: center;
@@ -227,14 +229,14 @@ h2 {
 }
 
 .pagination-button:hover {
-  background-color: #d6a2e8;
+  background-color: #5F6F52;
   color: #fff;
   text-decoration: none !important;
 }
 
 .pagination-button:focus {
   outline: none;
-  background-color: #d6a2e8;
+  background-color: #5F6F52;
   color: #fff;
   text-decoration: none !important;
 }

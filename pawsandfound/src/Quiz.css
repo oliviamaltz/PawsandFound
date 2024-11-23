@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 .quiz-container {
-  font-family: 'Roboto Slab', serif !important;
+  font-family: 'Noto Sans' !important;
   max-width: 400px; /* Phone-sized layout */
   height: 100vh; /* Full screen height */
   margin: 0 auto; /* Center container */
   padding: 20px;
-  background-color: #A3D9A5; /* Green background */
+  background-color: #F2EFDE; /* Green background */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   box-sizing: border-box; /* Include padding in dimensions */
@@ -66,7 +65,7 @@ input[type="radio"] {
   width: 100%;
   position: relative;
   height: 5px;
-  background-color: #ccc;
+  background-color: #B99470;
   border-radius: 5px;
 }
 
@@ -81,8 +80,8 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background-color: #C38AD1; /* Purple background when checked */
-  color: white; /* Optional: change text color to white */
+  background-color: #B99470; /* Purple background when checked */
+  color: #FEFAE0; /* Optional: change text color to white */
   border-radius: 5px; /* Optional: round the edges */
 }
 
@@ -98,7 +97,7 @@ input[type="radio"] + label {
   z-index: 2;
   width: 20px;
   height: 20px;
-  background-color: #C38AD1;
+  background-color: #B99470;
   border-radius: 50%;
   pointer-events: all;
   -webkit-appearance: none;
@@ -107,7 +106,7 @@ input[type="radio"] + label {
 .range-slider input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background-color: #C38AD1;
+  background-color: #B99470;
   border-radius: 50%;
   pointer-events: all;
 }
@@ -128,8 +127,8 @@ input[type="radio"] + label {
 
 .quiz-footer-button {
   font-size: 18px; /* Larger font size */
-  background-color: #d3d3d3; /* Light grey background */
-  color: #000; /* Black text */
+  background-color: #A9B388; /* Light grey background */
+  color: #FFFFFF; /* Black text */
   border: none;
   border-radius: 5px;
   padding: 15px 40px; /* Larger padding */
@@ -140,5 +139,5 @@ input[type="radio"] + label {
 }
 
 .quiz-footer-button:hover {
-  background-color: #c0c0c0; /* Slightly darker grey on hover */
+  background-color: #5F6F52; /* Slightly darker grey on hover */
 }

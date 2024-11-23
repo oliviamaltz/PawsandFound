@@ -27,10 +27,10 @@ function Quiz4() {
     <div className="quiz-container">
       {/* Header Section with Paw Icons */}
       <div className="quiz-header">
-        <FontAwesomeIcon icon={faPaw} size="2x" color="white" />
-        <FontAwesomeIcon icon={faPaw} size="2x" color="white" />
-        <FontAwesomeIcon icon={faPaw} size="2x" color="white" />
-        <FontAwesomeIcon icon={faPaw} size="2x" color="#183d34" />
+        <FontAwesomeIcon icon={faPaw} size="2x" color="#A9B388" />
+        <FontAwesomeIcon icon={faPaw} size="2x" color="#A9B388" />
+        <FontAwesomeIcon icon={faPaw} size="2x" color="#A9B388" />
+        <FontAwesomeIcon icon={faPaw} size="2x" color="#5F6F52" />
       </div>
 
       {/* Content Section */}

@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 
 .apply-page-container {
-  font-family: 'Roboto Slab', serif !important;
+  font-family: 'Noto Sans' !important;
   max-width: 400px; /* Limits the width to make it look like a phone screen */
   height: 100vh; /* Ensures the container fills the full height of the screen */
   margin: 0 auto;
   padding: 20px;
-  background-color: #123524; /* Background color */
+  background-color: #5F6F52; /* Background color */
   border-radius: 10px; /* Matches the rounded corners of Home.css */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
-  font-family: Arial, sans-serif;
   color: #ffffff; /* White text color */
   text-align: center;
   display: flex;
@@ -20,27 +19,27 @@
 }
 
 .apply-welcome-text {
-  font-size: 1.5rem; /* Matches the title font size in Home.css */
+  font-size: 35px; /* Matches the title font size in Home.css */
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .apply-subtitle-text {
-  font-size: 1.2rem; /* Matches the welcome message font size in Home.css */
+  font-size: 25px; /* Matches the welcome message font size in Home.css */
   margin-bottom: 10px;
   max-width: 80%; /* Ensures proper alignment and wrapping */
-  color: #d3d3d3; /* Light gray for a subtle appearance */
+  color: #FFFFFF; /* Light gray for a subtle appearance */
 }
 
 .apply-logo {
-  width: 150px; /* Matches a proportionate size for phone screens */
+  width: 250px; /* Matches a proportionate size for phone screens */
   height: auto;
   margin: 15px 0;
 }
 
 .apply-thank-you-text {
-  font-size: 1rem; /* Matches the quiz-prompt font size in Home.css */
+  font-size: 20px; /* Matches the quiz-prompt font size in Home.css */
   margin-bottom: 20px;
   max-width: 80%;
-  color: #d3d3d3; /* Light gray for consistency */
+  color: #FFFFFF; /* Light gray for consistency */
 }

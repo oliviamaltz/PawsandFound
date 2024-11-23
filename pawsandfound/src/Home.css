@@ -1,16 +1,15 @@
 /* Home.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 .home-container {
-    font-family: 'Roboto Slab', serif !important;
+    font-family: 'Noto Sans' !important;
     max-width: 400px; /* Limits the width to make it look like a phone screen */
     height: 100vh; /* Ensures the container fills the full height of the screen */
     margin: 0 auto;
     padding: 20px;
-    background-color: #183d34; /* Dark green background specific to Home page */
+    background-color: #5F6F52; /* Dark green background specific to Home page */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
     color: #ffffff; /* White text color */
     text-align: center;
     display: flex;
@@ -23,19 +22,20 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: bold;
+    color:#FFFFFF
   }
   
   .welcome-message {
     font-size: 1.2rem;
     margin-bottom: 10px;
     max-width: 80%;
-    color: #d3d3d3; /* Light gray for a subtle appearance */
+    color: #FFFFFF; /* Light gray for a subtle appearance */
   }
   
   .quiz-prompt {
     font-size: 1rem;
-    margin-bottom: 20px;
-    color: #a8d5a8;
+    margin-bottom: 30px;
+    color: #FFFFFF;
   }
   
   .button-container {
@@ -46,10 +46,9 @@
   }
   
   .quiz-button {
-    background-color: #a8d5a8;
-    color: #183d34;
+    background-color: #A9B388;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -58,6 +57,6 @@
   }
   
   .quiz-button:hover {
-    background-color: #86c086;
+    background-color: #F2EFDE;
   }
   

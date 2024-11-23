@@ -1,13 +1,13 @@
 /* Location.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 .location-page-container {
-  font-family: 'Roboto Slab', serif !important;
+  font-family: 'Noto Sans' !important;
   max-width: 400px; /* Limits the width to make it look like a phone screen */
   height: 100vh; /* Ensures the container fills the full height of the screen */
   margin: 0 auto;
   padding: 20px;
-  background-color: #f3f4f6; /* Light background specific to Location page */
+  background-color: #F2EFDE; /* Light background specific to Location page */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -34,6 +34,54 @@
   border-radius: 10px;
 }
 
+/* Base styling for the range slider */
+.slider {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  appearance: none;
+  width: 100%; /* Full width */
+  height: 8px; /* Track height */
+  background: #d2b48c; /* Light brown background for the track */
+  border-radius: 5px; /* Rounded track */
+  outline: none; /* Remove focus outline */
+  opacity: 0.8; /* Slightly transparent */
+  transition: opacity 0.3s;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Thumb styling for WebKit browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: #B99470; /* SaddleBrown thumb color */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Thumb styling for Firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #B99470; /* SaddleBrown thumb color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Track styling for Firefox */
+.slider::-moz-range-track {
+  background: #B99470; /* Light brown track color */
+  border-radius: 5px;
+  height: 8px;
+}
+
+
 .buttons-container {
   display: flex;
   gap: 10px;
@@ -41,18 +89,19 @@
 }
 
 .location-button {
-  background-color: #6c757d;
+  background-color: #A9B388;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 5px;
+  margin: 10px;
   cursor: pointer;
   width: 100%; /* Makes each button take full width of the container */
 }
 
 .location-button:hover {
-  background-color: #5a6268;
+  background-color: #5F6F52;
 }
 
 .slider {
@@ -62,7 +111,7 @@
 }
 
 .btn-primary {
-  background-color: #6c757d;
+  background-color: #A9B388;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -74,5 +123,5 @@
 }
 
 .btn-primary:hover {
-  background-color: #5a6268;
+  background-color: #5F6F52;
 }

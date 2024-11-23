@@ -17,8 +17,10 @@ function Home() {
         <Link to="/Location">
           <button className="quiz-button">Start New Quiz</button>
         </Link>
-        <button className="quiz-button" onClick={() => alert('This button is inactive.')}>Load Saved Quiz</button>
-        <button className="quiz-button" onClick={() => alert('This button is inactive.')}>Skip Quiz</button>
+        <Link to="/Results">
+          <button className="quiz-button" >View All Available Pets</button>
+        </Link>
+        
       </div>
 
       <Routes>
