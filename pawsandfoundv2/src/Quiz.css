@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+.quiz-container {
+  font-family: 'Roboto Slab', serif !important;
+  max-width: 400px; /* Phone-sized layout */
+  height: 100vh; /* Full screen height */
+  margin: 0 auto; /* Center container */
+  padding: 20px;
+  background-color: #A3D9A5; /* Green background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding in dimensions */
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-evenly; /* Distribute icons closer horizontally */
+  align-items: center;
+  margin-top: 20px; /* Push paw icons down vertically */
+  margin-bottom: 15px; /* Space between paw icons and questions */
+}
+
+.quiz-header img {
+  width: 40px; /* Adjust paw size */
+  height: 40px;
+}
+
+.quiz-content {
+  flex: 3; /* Take 3/4ths of the green rectangle */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Spread out the questions evenly */
+  padding-bottom: 10px;
+}
+
+.quiz-item {
+  margin-bottom: 8px; /* Increased spacing between questions */
+}
+
+.quiz-item h3 {
+  margin-bottom: 8px; /* Space between question text and input elements */
+  font-size: 1.2rem;
+  color: #000; /* Black text */
+}
+
+.quiz-item .form-check {
+  margin-bottom: 10px; /* Space between inputs */
+}
+
+.quiz-note {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem; /* Adjust to match the question font size */
+  font-weight: bold; /* Makes the text bold */
+  color: #183d34;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.5); /* Increase input size */
+  margin-right: 10px; /* Add space to the right of inputs */
+}
+
+.d-flex.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.d-flex.flex-wrap {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping to create multiple rows */
+  gap: 3px; /* Adds spacing between items */
+}
+
+.form-check {
+  width: 45%; /* Ensures two checkboxes fit per row */
+}
+
+.form-check {
+  margin-bottom: 6px; /* Adds space between radio options */
+}
+
+.range-slider-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.range-slider {
+  width: 100%;
+  position: relative;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #C38AD1; /* Purple background when checked */
+  color: white; /* Optional: change text color to white */
+  border-radius: 5px; /* Optional: round the edges */
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block; /* Display the label like a button */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background-color: #C38AD1;
+  border-radius: 50%;
+  pointer-events: all;
+  -webkit-appearance: none;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #C38AD1;
+  border-radius: 50%;
+  pointer-events: all;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.quiz-button-container {
+  display: flex;
+  justify-content: space-around; /* Space buttons closer together */
+  align-items: center;
+  margin-top: 6px; /* Keep buttons slightly up */
+}
+
+.quiz-footer-button {
+  font-size: 18px; /* Larger font size */
+  background-color: #d3d3d3; /* Light grey background */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px; /* Larger padding */
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background-color 0.3s;
+}
+
+.quiz-footer-button:hover {
+  background-color: #c0c0c0; /* Slightly darker grey on hover */
+}
