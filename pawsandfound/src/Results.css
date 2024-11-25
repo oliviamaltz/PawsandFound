@@ -112,7 +112,7 @@ h2 {
 }
 
 .tag {
-  background-color: #B99470;
+  background-color: #A98B98;
   color: white;
   padding: 5px 10px;
   border-radius: 12px;
@@ -155,7 +155,7 @@ h2 {
   margin-top: 4px;
   font-size: 12px;
   text-decoration: none !important;
-  color: #A9B388;
+  color: #A98B98;
 }
 
 .footer-link:hover {
@@ -241,7 +241,7 @@ h2 {
   text-decoration: none !important;
 }
 
-.footer-link,
+
 .pagination-button {
   display: flex;
   justify-content: center;
@@ -249,6 +249,18 @@ h2 {
   width: 40px; /* Match sizes */
   height: 35px; /* Match sizes */
   text-decoration: none !important;
+  font-weight: 600;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Match sizes */
+  height: 35px; /* Match sizes */
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #A98B98;
 }
 
 /* Ensure no underlines for all links, including pagination buttons and footer links */
@@ -269,4 +281,48 @@ a span, .footer-link span {
 /* General fallback for all links inside the container */
 .results-container a {
   text-decoration: none !important;
+}
+
+.form-control {
+  color: #333; /* Dark text color */
+  border: 1px solid #5F6F52; /* Border color */
+  border-radius: 5px; /* Optional: rounded corners */
+  padding: 8px; /* Optional: better spacing inside the input */
+}
+
+.form-control:focus {
+  outline: none; /* Remove default outline */
+}
+
+/* Style the search button */
+.btn {
+  background-color: white; /* Set background color to black */
+  color: black; /* Set text color to white for contrast */
+  border-color: #5F6F52; /* Remove the border */
+  border-radius: 5px; /* Optional: rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #5F6F52; /* Darker green background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Optional: Style the outline-success variant specifically */
+
+
+/* Hover for the outline-success button */
+.btn.btn-outline-success:hover {
+  background-color: #A9B388; /* Fill with greenish color on hover */
+  color: white; /* Change text to white */
+  border: none; /* Remove border */
+}
+
+/* Active (clicked) state */
+.btn:active {
+  background-color: #A98B98; /* Light purple/pinkish color */
+  color: white; /* Ensure text remains white */
+  transform: scale(0.98); /* Slightly shrink to simulate a press */
 }

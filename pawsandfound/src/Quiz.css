@@ -65,7 +65,7 @@ input[type="radio"] {
   width: 100%;
   position: relative;
   height: 5px;
-  background-color: #B99470;
+  background-color: #A98B98;
   border-radius: 5px;
 }
 
@@ -80,7 +80,7 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background-color: #B99470; /* Purple background when checked */
+  background-color: #A98B98; /* Purple background when checked */
   color: #FEFAE0; /* Optional: change text color to white */
   border-radius: 5px; /* Optional: round the edges */
 }
@@ -90,6 +90,8 @@ input[type="radio"] + label {
   display: inline-block; /* Display the label like a button */
   cursor: pointer; /* Show pointer cursor on hover */
   transition: background-color 0.3s; /* Smooth transition */
+  color: #000000;
+  font-weight: 500;
 }
 
 .range-slider input[type="range"]::-webkit-slider-thumb {
@@ -97,16 +99,17 @@ input[type="radio"] + label {
   z-index: 2;
   width: 20px;
   height: 20px;
-  background-color: #B99470;
+  background-color: #A98B98;
   border-radius: 50%;
   pointer-events: all;
   -webkit-appearance: none;
+  font-weight: 500;
 }
 
 .range-slider input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background-color: #B99470;
+  background-color: #A98B98;
   border-radius: 50%;
   pointer-events: all;
 }
@@ -116,6 +119,7 @@ input[type="radio"] + label {
   justify-content: space-between;
   margin-top: 10px;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .quiz-button-container {
