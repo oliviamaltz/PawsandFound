@@ -8,6 +8,8 @@ import Location from './Location';
 import Results from './Results';
 import picklesImage from './pickles.png';
 import './Results.css';
+import HumanProfile from './HumanProfile';
+
 
 function Results2() {
   return (
@@ -77,6 +79,7 @@ function Results2() {
         <Route path="/Profile/*" element={<Profile />} />
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Results/*" element ={<Results />} />
+        <Route path="/Favorites/*" element={<HumanProfile />} /> {/* New route */}
       </Routes>
     </div>
   );

@@ -9,6 +9,7 @@ import garfieldImage from './garfield1.png';
 import tobyImage from './toby.png';
 import Results2 from './Results2'
 import './Results.css';
+import HumanProfile from './HumanProfile';
 
 function Results() {
   return (
@@ -101,6 +102,7 @@ function Results() {
         <Route path="/Profile/*" element={<Profile />} />
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Results2/*" element={<Results2 />} />
+        <Route path="/Favorites/*" element={<HumanProfile />} /> {/* New route */}
       </Routes>
     </div>
   );
