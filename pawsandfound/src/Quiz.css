@@ -53,6 +53,7 @@ input[type="checkbox"],
 input[type="radio"] {
   transform: scale(1.5); /* Increase input size */
   margin-right: 10px; /* Add space to the right of inputs */
+  margin-left: 20px;
 }
 
 .range-slider-container {
@@ -92,6 +93,7 @@ input[type="radio"] + label {
   transition: background-color 0.3s; /* Smooth transition */
   color: #000000;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 .range-slider input[type="range"]::-webkit-slider-thumb {
@@ -144,4 +146,12 @@ input[type="radio"] + label {
 
 .quiz-footer-button:hover {
   background-color: #5F6F52; /* Slightly darker grey on hover */
+}
+
+.quiz-note {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem; /* Adjust to match the question font size */
+  font-weight: bold; /* Makes the text bold */
+  color: #000;
 }

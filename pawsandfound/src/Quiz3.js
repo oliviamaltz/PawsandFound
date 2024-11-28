@@ -28,11 +28,15 @@ function Quiz3() {
         <FontAwesomeIcon icon={faPaw} size="2x" color="#A9B388" />
       </div>
 
+      <div className="quiz-note">
+        <p>Tell us about your home so we can find the best match!</p>
+      </div>
+
       {/* Content Section */}
       <div className="quiz-content">
         {/* Question 1 */}
         <div className="quiz-item">
-          <h3>Do you have an outdoor area or yard accessible to your foster animal?</h3>
+          <h3>Do you have access to an outdoor area or yard for your furry friend?</h3>
           <div id="flex" className="d-flex justify-content-left">
             <div className="form-check me-3">
               <input
@@ -63,7 +67,7 @@ function Quiz3() {
 
         {/* Question 2 */}
         <div className="quiz-item">
-          <h3>How much room (in sq ft) will your animal have access to?</h3>
+          <h3>What type of home would you be sharing with your pet?</h3>
           <div id="flex" className="d-flex flex-column align-items-start">
             <div className="form-check mb-2">
               <input
@@ -75,7 +79,7 @@ function Quiz3() {
                 checked={roomSize === 'Less than 500'}
                 onChange={handleRoomSizeChange}
               />
-              <label className="form-check-label" htmlFor="roomLess500">Less than 500</label>
+              <label className="form-check-label" htmlFor="roomLess500">Small Apartment/House</label>
             </div>
             <div className="form-check mb-2">
               <input
@@ -87,7 +91,7 @@ function Quiz3() {
                 checked={roomSize === '500-1000'}
                 onChange={handleRoomSizeChange}
               />
-              <label className="form-check-label" htmlFor="room500to1000">500-1000</label>
+              <label className="form-check-label" htmlFor="room500to1000">Mid-Sized Apartment/House</label>
             </div>
             <div className="form-check mb-2">
               <input
@@ -99,19 +103,7 @@ function Quiz3() {
                 checked={roomSize === '1000-2000'}
                 onChange={handleRoomSizeChange}
               />
-              <label className="form-check-label" htmlFor="room1000to2000">1000-2000</label>
-            </div>
-            <div className="form-check mb-2">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="room"
-                id="roomGreater2000"
-                value="Greater than 2000"
-                checked={roomSize === 'Greater than 2000'}
-                onChange={handleRoomSizeChange}
-              />
-              <label className="form-check-label" htmlFor="roomGreater2000">Greater than 2000</label>
+              <label className="form-check-label" htmlFor="room1000to2000">Large Apartment/House</label>
             </div>
           </div>
         </div>

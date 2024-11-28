@@ -17,10 +17,10 @@ function Results() {
         <h1>Quiz Results</h1>
       </header>
 
-      <form class="d-flex" role="search">
+      {/* <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> */}
 
       <div className="results-list">
         {/* Garfield Result */}
