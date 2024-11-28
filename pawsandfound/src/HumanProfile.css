@@ -1,0 +1,104 @@
+.human-profile-container {
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 400px; /* Phone-sized container */
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f6ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-section {
+    text-align: center;
+    background-color: #5F6F52;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .header-section h1 {
+    font-size: 26px; /* Larger size for "John Doe" */
+    font-weight: bold; /* Bold "John Doe" */
+    margin: 10px 0;
+  }
+  
+  .header-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0; /* Increased margin for spacing */
+  }
+  
+  .action-button {
+    background-color: #A9B388;
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Slightly larger buttons */
+    border-radius: 5px;
+    font-size: 15px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #5F6F52;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #A9B388;
+    margin: 30px 0 10px 0; /* Adjusted margin for spacing */
+  }
+  
+  .tiles-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .tile {
+    width: 108px; /* Maintained reduced size */
+    height: 108px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tile img {
+    width: 100%; /* Ensure image fills the tile */
+    height: 80%; /* Leave space for caption */
+    object-fit: cover; /* Prevent distortion */
+  }
+  
+  .tile-caption {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5F6F52;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+  }
+  

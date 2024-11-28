@@ -10,9 +10,8 @@ import Results from './Results';
 import Results2 from './Results2';
 import Profile from './Profile';
 import Apply from './Apply';
+import HumanProfile from './HumanProfile'; // Import HumanProfile
 import './Loading.css'; 
-// import '../public/styles.css'
-
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
             </div>
           }
         />
-        
         <Route path="/Home/*" element={<Home />} />
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Quiz/*" element={<Quiz />} />
@@ -42,6 +40,7 @@ function App() {
         <Route path="/Results/*" element={<Results />} />
         <Route path="/Results2/*" element={<Results2 />} />
         <Route path="/Profile/*" element={<Profile />} />
+        <Route path="/Favorites" element={<HumanProfile />} /> {/* Add this route */}
         <Route path="/Apply/*" element={<Apply />} />
       </Routes>
     </div>
