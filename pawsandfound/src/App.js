@@ -11,6 +11,7 @@ import Results2 from './Results2';
 import Profile from './Profile';
 import Apply from './Apply';
 import HumanProfile from './HumanProfile'; // Import HumanProfile
+import FAQ from './FAQ';
 import './Loading.css'; 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/Profile/*" element={<Profile />} />
         <Route path="/Favorites" element={<HumanProfile />} /> {/* Add this route */}
         <Route path="/Apply/*" element={<Apply />} />
+        <Route path="/FAQ/*" element={<FAQ />} />
       </Routes>
     </div>
   );
