@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Profile.css';
 import garfieldImage from './garfield1.png';
+import Results from "./Results"
 
 function Profile() {
   const [isFavorited, setIsFavorited] = useState(false);
@@ -56,6 +57,9 @@ function Profile() {
         </div>
         <p>I am diabetic and require 2 insulin shots a day, in the morning and evening. I eat a normal diet, but I need to watch the treats!</p>
       </div>
+      <Link to="/Results">
+          <button className="back-button">Back</button>
+        </Link>
     </div>
   );
 }

@@ -36,7 +36,7 @@
 .results-list2 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   /* padding-bottom: 250px; */
 }
 
@@ -260,7 +260,7 @@ h2 {
   height: 35px; /* Match sizes */
   text-decoration: none !important;
   font-weight: 600;
-  color: #A98B98;
+  color: #A9B388;
 }
 
 /* Ensure no underlines for all links, including pagination buttons and footer links */
