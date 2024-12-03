@@ -14,7 +14,7 @@ function FAQ() {
   const faqs = [
     {
       question: 'Why should I foster a pet?',
-      answer: 'Fostering saves lives. Every year, approximately 920,000 cats and dogs are euthanized in U.S. shelters due to overcrowding and a lack of adoptive homes. By fostering, you provide a temporary safe haven, giving pets the time and space they need to find their forever homes.',
+      answer: 'Every year, approximately 920,000 cats and dogs are euthanized in U.S. shelters due to overcrowding and a lack of adoptive homes. By fostering, you give pets the time and space they need to find their forever homes.',
     },
     {
       question: 'What is fostering?',
