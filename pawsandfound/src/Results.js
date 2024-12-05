@@ -10,6 +10,7 @@ import tobyImage from './toby.png';
 import Results2 from './Results2'
 import './Results.css';
 import HumanProfile from './HumanProfile';
+import Toby from './Toby';
 
 function Results() {
   return (
@@ -67,7 +68,7 @@ function Results() {
               <span className="tag">Affectionate</span>
               <span className="tag">Friendly</span>
             </div>
-            <Link to="/Profile">
+            <Link to="/Toby">
               <button className="more-info-button">More Information</button>
             </Link>
           </div>
@@ -103,6 +104,8 @@ function Results() {
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Results2/*" element={<Results2 />} />
         <Route path="/Favorites/*" element={<HumanProfile />} /> {/* New route */}
+        <Route path="/Toby/*" element={<Toby />} />
+
       </Routes>
     </div>
   );

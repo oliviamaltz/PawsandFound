@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+.loading-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #123524; /* Background color matching loading page */
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.welcome-text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px; /* Larger logo size */
+  height: auto;
+  margin: 20px 0;
+}
+
+.faq-list {
+  width: 90%; /* Consistent width with the rest of the content */
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f9f9f9;
+  transition: color 0.2s ease-in-out;
+  background-color: #65a39b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.faq-question:hover {
+  color: #f89c1c;
+}
+
+.faq-answer {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f1f1f1;
+  padding: 10px;
+  background-color: #00473e;
+  border-radius: 5px;
+}
+
+.expanded {
+  color: #f89c1c;
+}
+
+.faq-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%; /* Match the width of the FAQ content */
+  max-width: 600px;
+  margin: 0 auto 20px; /* Ensure it aligns with the rest of the page */
+  padding: 10px 0;
+  background-color: #65a39b;
+  border-radius: 5px; /* Optional: Adds rounded edges to the footer */
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #f89c1c;
+}
+
+.footer-link.active {
+  color: #f89c1c;
+  font-weight: bold;
+}

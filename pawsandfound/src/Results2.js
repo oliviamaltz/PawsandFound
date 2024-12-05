@@ -10,7 +10,8 @@ import picklesImage from './pickles.png';
 import lunaImage from './luna.png';
 import './Results.css';
 import HumanProfile from './HumanProfile';
-
+import Pickles from './Pickles';
+import Luna from './Luna';
 
 function Results2() {
   return (
@@ -45,7 +46,7 @@ function Results2() {
               <span className="tag">Energetic</span>
               <span className="tag">Anxious</span>
             </div>
-            <Link to="/Profile">
+            <Link to="/Pickles">
               <button className="more-info-button">More Information</button>
             </Link>
           </div>
@@ -71,7 +72,7 @@ function Results2() {
               <span className="tag">Playful</span>
               <span className="tag">Curious</span>
             </div>
-            <Link to="/Profile">
+            <Link to="/Luna">
               <button className="more-info-button">More Information</button>
             </Link>
           </div>
@@ -108,6 +109,8 @@ function Results2() {
         <Route path="/Location/*" element={<Location />} />
         <Route path="/Results/*" element ={<Results />} />
         <Route path="/Favorites/*" element={<HumanProfile />} /> {/* New route */}
+        <Route path="/Pickles/*" element={<Pickles />} /> {/* New route */}
+        <Route path="/Luna/*" element={<Luna />} />
       </Routes>
     </div>
   );

@@ -13,6 +13,9 @@ import Apply from './Apply';
 import HumanProfile from './HumanProfile'; // Import HumanProfile
 import FAQ from './FAQ';
 import './Loading.css'; 
+import Toby from './Toby';
+import Pickles from './Pickles';
+import Luna from './Luna';
 
 function App() {
   return (
@@ -44,6 +47,9 @@ function App() {
         <Route path="/Favorites" element={<HumanProfile />} /> {/* Add this route */}
         <Route path="/Apply/*" element={<Apply />} />
         <Route path="/FAQ/*" element={<FAQ />} />
+        <Route path="/Toby/*" element={<Toby />} />
+        <Route path="/Pickles/*" element={<Pickles />} />
+        <Route path="/Luna/*" element={<Luna />} />
       </Routes>
     </div>
   );
