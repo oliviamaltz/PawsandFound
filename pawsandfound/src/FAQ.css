@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #123524; /* Background color matching loading page */
+  background-color: #FEFAE0; /* Background color matching loading page */
   text-align: center;
   font-family: 'Roboto Slab', serif;
 }
@@ -17,16 +17,17 @@
   margin-bottom: 20px;
 }
 
-.logo {
-  width: 200px; /* Larger logo size */
-  height: auto;
-  margin: 20px 0;
+.logo1 {
+  width: 125px; 
+  height: 125px;
+  margin: 10px 0;
 }
 
 .faq-list {
   width: 90%; /* Consistent width with the rest of the content */
   max-width: 600px;
   margin: 20px auto;
+  margin-bottom: 100px;
   text-align: left;
 }
 
@@ -38,39 +39,39 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  color: #f9f9f9;
+  color: #000000;
   transition: color 0.2s ease-in-out;
-  background-color: #65a39b;
+  background-color: #A9B388;
   padding: 10px;
   border-radius: 5px;
 }
 
 .faq-question:hover {
-  color: #f89c1c;
+  color: #A98B98;
 }
 
 .faq-answer {
   font-size: 14px;
   margin-top: 10px;
-  color: #f1f1f1;
+  color: #000000;
   padding: 10px;
-  background-color: #00473e;
+  background-color: #FEFAE0;
   border-radius: 5px;
 }
 
 .expanded {
-  color: #f89c1c;
+  color: #A98B98;
 }
 
 .faq-footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 90%; /* Match the width of the FAQ content */
-  max-width: 600px;
-  margin: 0 auto 20px; /* Ensure it aligns with the rest of the page */
+  justify-content: center;
+  width: 100%; /* Match the width of the FAQ content */
+  max-width: 800px;
+  margin: 0 auto; /* Ensure it aligns with the rest of the page */
   padding: 10px 0;
-  background-color: #65a39b;
+  background-color: #5F6F52;
   border-radius: 5px; /* Optional: Adds rounded edges to the footer */
 }
 
@@ -79,16 +80,20 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #A9B388;
   font-size: 14px;
   transition: color 0.3s;
 }
 
 .footer-link:hover {
-  color: #f89c1c;
+  color: #FEFAE0;
 }
 
 .footer-link.active {
-  color: #f89c1c;
+  color: #FEFAE0;
   font-weight: bold;
+}
+
+.hidden-footer {
+  display: none;
 }

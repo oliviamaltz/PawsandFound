@@ -14,7 +14,7 @@ function FAQ() {
   const faqs = [
     {
       question: 'Why should I foster a pet?',
-      answer: 'Fostering saves lives. Every year, approximately 920,000 cats and dogs are euthanized in U.S. shelters due to overcrowding and a lack of adoptive homes. By fostering, you provide a temporary safe haven, giving pets the time and space they need to find their forever homes.',
+      answer: 'Every year, approximately 920,000 cats and dogs are euthanized in U.S. shelters due to overcrowding and a lack of adoptive homes. By fostering, you give pets the time and space they need to find their forever homes.',
     },
     {
       question: 'What is fostering?',
@@ -37,7 +37,7 @@ function FAQ() {
   return (
     <div className="loading-page-container">
       <h1 className="welcome-text">Frequently Asked Questions</h1>
-      <img src="/image.png" alt="Paws and Found Logo" className="logo" />
+      <img src="/image.png" alt="Paws and Found Logo" className="logo1" />
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
@@ -51,20 +51,22 @@ function FAQ() {
           </div>
         ))}
       </div>
-      <footer className="faq-footer">
-        <Link to="/Location" className="footer-link">
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
-          <span>Location</span>
-        </Link>
-        <Link to="/Favorites" className="footer-link">
-          <FontAwesomeIcon icon={faHeart} />
-          <span>Favorites</span>
-        </Link>
-        <Link to="/FAQ" className="footer-link active">
-          <FontAwesomeIcon icon={faQuestionCircle} />
-          <span>FAQ</span>
-        </Link>
-      </footer>
+      {expanded === null && (
+        <footer className="faq-footer">
+          <Link to="/Location" className="footer-link">
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
+            <span>Location</span>
+          </Link>
+          <Link to="/Favorites" className="footer-link">
+            <FontAwesomeIcon icon={faHeart} />
+            <span>Favorites</span>
+          </Link>
+          <Link to="/FAQ" className="footer-link active">
+            <FontAwesomeIcon icon={faQuestionCircle} />
+            <span>FAQ</span>
+          </Link>
+        </footer>
+      )}
     </div>
   );
 }

@@ -6,6 +6,10 @@ import tobyImage from "./toby.png";
 import picklesImage from "./pickles.png";
 import acctImage from "./ACCT.png";
 import pawsImage from "./paws.png";
+import { Link } from 'react-router-dom';
+import Location from "./Location"
+import Results from "./Results"
+import Quiz from "./Quiz"
 
 function HumanProfile() {
   return (
@@ -23,9 +27,15 @@ function HumanProfile() {
       </div>
 
       <div className="buttons-container">
-        <button className="action-button">Location</button>
-        <button className="action-button">Search</button>
-        <button className="action-button">Edit Quiz</button>
+      <Link to="/Location">
+          <button className="action-button">Location</button>
+        </Link>
+        <Link to="/Results">
+          <button className="action-button">Search</button>
+        </Link>
+        <Link to="/Quiz">
+          <button className="action-button">Edit Quiz</button>
+        </Link>
       </div>
 
       <div className="section-title">Your Favorites</div>

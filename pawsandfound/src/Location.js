@@ -45,10 +45,10 @@ function Location() {
         </MapContainer>
       </div>
       
-      <div className="buttons-container">
+      {/* <div className="buttons-container">
         <button className="location-button">Current Location</button>
         <button className="location-button">Different Location</button>
-      </div>
+      </div> */}
       
       <h3>Choose Search Radius:</h3>
       <input
